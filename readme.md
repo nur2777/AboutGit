@@ -169,11 +169,11 @@ Staging area также называют index (англ. «каталог») и
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged + tracked;
-  staged + tracked    -- "git commit"  --> tracked;
+  untracked -- "git add" --> staged/tracked;
+  staged/tracked    -- "git commit"  --> tracked;
   tracked -- "внесли изменения" --> modified;
-  modified -- "git add" --> staged + tracked;
-  staged + tracked -- "внесли изменения" --> modified;
+  modified -- "git add" --> staged/tracked;
+  staged/tracked -- "внесли изменения" --> modified;
 
 ``` 
 
